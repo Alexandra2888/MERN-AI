@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const handleFreeSubscriptionAPI = async () => {
   const response = await axios.post(
-    "http://localhost:5000/api/v1/stripe/free-plan",
+    "https://mern-ai-szmc.onrender.com/stripe/free-plan",
     {},
     {
       withCredentials: true,

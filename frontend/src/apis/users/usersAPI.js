@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const registerAPI = async (userData) => {
   const response = await axios.post(
-    "http://localhost:5000/api/v1/users/register",
+    "https://mern-ai-szmc.onrender.com/users/register",
     {
       email: userData?.email,
       password: userData?.password,
@@ -19,7 +19,7 @@ export const registerAPI = async (userData) => {
 
 export const loginAPI = async (userData) => {
   const response = await axios.post(
-    "http://localhost:5000/api/v1/users/login",
+    "https://mern-ai-szmc.onrender.com/users/login",
     {
       email: userData?.email,
       password: userData?.password,
@@ -34,7 +34,7 @@ export const loginAPI = async (userData) => {
 
 export const checkUserAuthStatusAPI = async () => {
   const response = await axios.get(
-    "http://localhost:5000/api/v1/users/auth/check",
+    "https://mern-ai-szmc.onrender.com/users/auth/check",
     {
       withCredentials: true,
     }
@@ -45,7 +45,7 @@ export const checkUserAuthStatusAPI = async () => {
 
 export const logoutAPI = async () => {
   const response = await axios.post(
-    "http://localhost:5000/api/v1/users/logout",
+    "https://mern-ai-szmc.onrender.com/users/logout",
     {},
     {
       withCredentials: true,
@@ -57,7 +57,7 @@ export const logoutAPI = async () => {
 
 export const getUserProfileAPI = async () => {
   const response = await axios.get(
-    "http://localhost:5000/api/v1/users/profile",
+    "https://mern-ai-szmc.onrender.com/users/profile",
 
     {
       withCredentials: true,
