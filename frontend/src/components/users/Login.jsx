@@ -36,14 +36,16 @@ const Login = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      // Here, you would typically handle form submission
-
-      mutation.mutate(values);
-
-      // Simulate login success and navigate to dashboard
-      setTimeout(() => {
-        navigate("/dashboard");
-      }, 5000);
+      // Perform the mutation to login
+      mutation.mutate(values, {
+        onSuccess: (data) => {
+          login(data);
+          navigate("/dashboard");
+        },
+        onError: (error) => {
+          console.error(error);
+        }
+      });
     },
   });
   //Update is authenticated
