@@ -8,4 +8,5 @@ export default defineConfig({
     proxy: {
       "/api/v1/": "https://mern-ai-szmc.onrender.com",
     },
+  },
 })
