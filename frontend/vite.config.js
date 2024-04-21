@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api/v1/": "https://mern-ai-szmc.onrender.com",
+      "/api/v1/": "https://mern-ai-szmc.onrender.com/",
     },
   },
 })
