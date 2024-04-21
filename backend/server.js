@@ -98,7 +98,7 @@ cron.schedule("0 0 1 * * *", async () => {
 app.use(express.json()); //pass incoming json data
 app.use(cookieParser()); //pass the cookie automatically
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://main--mern-ai.netlify.app/",
   credentials: true,
 };
 app.use(cors(corsOptions));
